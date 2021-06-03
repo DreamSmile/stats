@@ -7,7 +7,6 @@ import './assets/font/iconfont.css'
 
 Vue.config.productionTip = false
 Vue.prototype.$imgsrc = 'http://tm.lilanz.com/QYWX/Test/LMTest/assets/img/assetsPage/'
-
 new Vue({
   router,
   store,

@@ -2,7 +2,7 @@
   <div class="home">
     <div class="btn">
       <router-link to="/lawyer"><button>律师简介界面</button></router-link>
-      <router-link to="/details"><button>商城</button></router-link>
+      <router-link to="/mallHome"><button>商城</button></router-link>
     </div>
   </div>
 </template>
@@ -14,13 +14,8 @@ export default {
 </script>
 <style scoped lang="less">
 .home {
-  // padding: 20px;
 
   .btn {
-    // display: grid;
-    // grid-template-columns: auto auto auto;
-    // grid-template-rows: auto auto auto;
-    // grid-gap: 10px;
     button {
       background-color: #fff;
       border: 1px solid #1989fa;
