@@ -54,6 +54,7 @@ export default {
   height: 50px;
   width: 100%;
   z-index: 3;
+  border-top: 1px solid #e2e2e2;
   .items {
     display: flex;
     justify-content: space-around;

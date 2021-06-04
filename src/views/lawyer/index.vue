@@ -134,6 +134,7 @@
   min-height: 100vh;
   padding: 20px;
   box-sizing: border-box;
+  border-top: 1px solid #ccc;
   // 律师个人信息
   .lawyer_info {
     padding: 0 20px 20px 20px;

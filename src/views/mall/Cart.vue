@@ -2,7 +2,7 @@
   <div class="cart">
     <div class="mian">
       <!-- 订单列表 -->
-      <div class="list">
+      <div class="list" v-for="(item, i) in 5" :key="i">
         <div class="top">
           <input type="radio" class="radio" />
           <span class="name"
@@ -32,18 +32,16 @@
           </div>
         </div>
       </div>
-      <!-- 底部购买按钮 -->
-      <div class="buy">
-        <div class="buy_box">
-          <div class="all_product">
-            <input type="radio" class="radio" />全选
-          </div>
-          <div class="all_money">
-            <span class="money"
-              >合计：<span class="money_color"><em>￥2000</em>.03</span></span
-            >
-            <button>结算(6)</button>
-          </div>
+    </div>
+    <!-- 底部购买按钮 -->
+    <div class="buy">
+      <div class="buy_box">
+        <div class="all_product"><input type="radio" class="radio" />全选</div>
+        <div class="all_money">
+          <span class="money"
+            >合计：<span class="money_color"><em>￥2000</em>.03</span></span
+          >
+          <button>结算(6)</button>
         </div>
       </div>
     </div>
@@ -65,10 +63,12 @@ export default {
     min-height: calc(100vh - 50px);
     box-sizing: border-box;
     padding: 16px;
+    margin-bottom: 50px;
     .list {
       background-color: #fff;
       border-radius: 10px;
       padding: 12px;
+      margin-bottom: 12px;
       .top {
         margin-bottom: 14px;
         .radio {
@@ -139,32 +139,45 @@ export default {
         }
       }
     }
-    // 底部结算
-    .buy {
-      position: fixed;
-      bottom: 50px;
-      left: 0;
-      right: 0;
-      width: 100%;
-      height: 50px;
-      .buy_box {
-        .all_product {
-          .radio {
+  }
+  // 底部结算
+  .buy {
+    position: fixed;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    box-sizing: border-box;
+
+    .buy_box {
+      padding: 10px 16px;
+      height: 100%;
+      .all_product {
+        float: left;
+        line-height: 40px;
+        margin-left: 12px;
+        .radio {
+          zoom: 164%;
+          line-height: 50px;
+          vertical-align: middle;
+        }
+      }
+      .all_money {
+        text-align: right;
+        .money {
+          margin-right: 10px;
+          .money_color {
           }
         }
-        .all_money {
-          .money {
-            .money_color {
-            }
-          }
-          button {
-            border-radius: 20px;
-            background-image: linear-gradient(to right, #ff6034, #ee0a24);
-            height: 40px;
-            width: 110px;
-            border: none;
-            color: #fff;
-          }
+        button {
+          border-radius: 20px;
+          background-image: linear-gradient(to right, #ff6034, #ee0a24);
+          height: 40px;
+          width: 110px;
+          border: none;
+          color: #fff;
         }
       }
     }
