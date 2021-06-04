@@ -164,6 +164,7 @@ export default {
           vertical-align: middle;
         }
       }
+      
       .all_money {
         text-align: right;
         .money {
