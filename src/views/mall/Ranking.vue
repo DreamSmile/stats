@@ -59,13 +59,12 @@ export default {
 </script>
 <style scoped lang="less">
 .ranking {
-  font-family: PingFang SC;
   background-color: #f8f8f7;
   min-height: 100vh;
   .hearders {
     background-color: #f8f8f7;
     background: linear-gradient(321deg, #ff9d31 0%, #fd6717 100%, #fd6416 100%);
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
@@ -81,7 +80,7 @@ export default {
         flex: 1;
         text-align: center;
         font-size: 20px;
-        font-family: Helvetica-Bold, Helvetica;
+        font-family: Helvetica;
         font-weight: bold;
         color: #fddf17;
         line-height: 24px;
@@ -108,9 +107,6 @@ export default {
       height: 170px;
       background-color: #fff;
       border-radius: 8px;
-    }
-    .item:first-child {
-      margin-top: 126px;
     }
   }
 }

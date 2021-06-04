@@ -75,7 +75,6 @@ export default {
 </script>
 <style scoped lang="less">
 .home {
-  font-family: PingFangSC-Medium, PingFang SC;
   background-color: #f8f8f7;
   color: #1b1c1c;
   .swipe {
@@ -234,7 +233,6 @@ export default {
             }
             .space {
               font-size: 14px;
-              font-family: PingFangSC-Regular, PingFang SC;
               font-weight: 400;
               color: #e2e2e2;
               position: absolute;
@@ -244,9 +242,6 @@ export default {
           }
         }
       }
-    }
-    .item:last-child {
-      margin-bottom: 50px;
     }
   }
 }

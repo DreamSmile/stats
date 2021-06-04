@@ -47,7 +47,7 @@ export default {
 </script>
 <style scoped lang="less">
 .tabbar {
-  position: fixed;
+  position: sticky;
   bottom: 0;
   left: 0;
   background-color: #fff;
