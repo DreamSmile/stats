@@ -10,7 +10,7 @@
         <div class="btns">
           <!-- <img :src="$imgsrc + 'follow.png'" class="icon_follow" /> -->
           <button class="btn btn_blue">
-            <i class="iconfont">&#xe607;</i>
+            <i class="iconfont">&#xe62f;</i>
             关注
           </button>
           <button class="btn">分享名片</button>

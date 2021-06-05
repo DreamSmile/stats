@@ -25,7 +25,7 @@
                 <div class="number">
                   <i class="iconfont">&#xe637;</i>
                   <span>1</span>
-                  <i class="iconfont">&#xe607;</i>
+                  <i class="iconfont">&#xe62f;</i>
                 </div>
               </div>
             </div>
@@ -35,14 +35,12 @@
     </div>
     <!-- 底部购买按钮 -->
     <div class="buy">
-      <div class="buy_box">
-        <div class="all_product"><input type="radio" class="radio" />全选</div>
-        <div class="all_money">
-          <span class="money"
-            >合计：<span class="money_color"><em>￥2000</em>.03</span></span
-          >
-          <button>结算(6)</button>
-        </div>
+      <div class="all_product"><input type="radio" class="radio" />全选</div>
+      <div class="all_money">
+        <span class="money"
+          >合计:<span class="money_color"><em>￥2000</em>.03</span></span
+        >
+        <button>结算(6)</button>
       </div>
     </div>
     <tabbar></tabbar>
@@ -128,8 +126,6 @@ export default {
                 }
               }
               .number {
-                .iconfont {
-                }
                 span {
                   padding: 0 6px;
                 }
@@ -150,36 +146,41 @@ export default {
     height: 60px;
     background-color: #fff;
     box-sizing: border-box;
+    padding: 10px 16px;
+    max-width: 540px;
+    margin: 0 auto;
 
-    .buy_box {
-      padding: 10px 16px;
-      height: 100%;
-      .all_product {
-        float: left;
-        line-height: 40px;
-        margin-left: 12px;
-        .radio {
-          zoom: 164%;
-          line-height: 50px;
-          vertical-align: middle;
-        }
+    .all_product {
+      float: left;
+      line-height: 40px;
+      margin-left: 12px;
+      .radio {
+        zoom: 164%;
+        line-height: 50px;
+        vertical-align: middle;
       }
-      
-      .all_money {
-        text-align: right;
-        .money {
-          margin-right: 10px;
-          .money_color {
+    }
+
+    .all_money {
+      text-align: right;
+
+      .money {
+        margin-right: 10px;
+        .money_color {
+          color: #fd6416;
+          em {
+            font-weight: 600;
+            font-size: 16px;
           }
         }
-        button {
-          border-radius: 20px;
-          background-image: linear-gradient(to right, #ff6034, #ee0a24);
-          height: 40px;
-          width: 110px;
-          border: none;
-          color: #fff;
-        }
+      }
+      button {
+        border-radius: 20px;
+        background-image: linear-gradient(to right, #ff6034, #ee0a24);
+        height: 40px;
+        width: 110px;
+        border: none;
+        color: #fff;
       }
     }
   }
