@@ -8,6 +8,10 @@ const mallHome = r => require.ensure([], () => r(require('@/views/mall/Home')), 
 const mallCart = r => require.ensure([], () => r(require('@/views/mall/Cart')), 'mallCart');
 const mallUser = r => require.ensure([], () => r(require('@/views/mall/User')), 'mallUser');
 const mallRanking = r => require.ensure([], () => r(require('@/views/mall/Ranking')), 'mallRanking');
+// 音乐
+const musicHall = r => require.ensure([], () => r(require('@/views/music/Hall')), 'musicHall');
+const musicRecommend = r => require.ensure([], () => r(require('@/views/music/Recommend')), 'musicRecommend');
+const musicLike = r => require.ensure([], () => r(require('@/views/music/Like')), 'musicLike');
 
 Vue.use(VueRouter)
 
@@ -40,6 +44,18 @@ const routes = [
     path: "/mallRanking",
     name: "MallRanking",
     component: mallRanking
+  }, {
+    path: "/musicHall",
+    name: "MusicHall",
+    component: musicHall
+  }, {
+    path: "/musicRecommend",
+    name: "MusicRecommend",
+    component: musicRecommend
+  }, {
+    path: "/musicLike",
+    name: "MusicLike",
+    component: musicLike
   }
 ]
 

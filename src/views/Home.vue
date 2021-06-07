@@ -3,6 +3,7 @@
     <div class="btn">
       <router-link to="/lawyer"><button>律师简介界面</button></router-link>
       <router-link to="/mallHome"><button>商城</button></router-link>
+      <router-link to="/musicHall"><button>音乐</button></router-link>
     </div>
   </div>
 </template>
@@ -14,7 +15,6 @@ export default {
 </script>
 <style scoped lang="less">
 .home {
-
   .btn {
     button {
       background-color: #fff;
