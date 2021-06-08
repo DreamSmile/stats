@@ -6,6 +6,7 @@
         <div class="details">
           <div class="photo">
             <div
+              @click="goDetails"
               class="imgs"
               :style="{ backgroundImage: 'url(' + $imgsrc + 'recommend.png)' }"
             ></div>
@@ -33,12 +34,6 @@
     </div>
     <div class="roll">
       <ul>
-        <!-- <li
-          v-for="(item, i) in 6"
-          :key="i"
-          :class="['lis', { isSelect: i == sel }]"
-          :style="{ height: i < 4 ? (i + 1) * 4 + 'px' : (i - 1) * 4 + 'px' }"
-        ></li> -->
         <li
           v-for="(item, i) in 11"
           :key="i"
@@ -161,5 +156,10 @@ export default {
     };
   },
   components: { Play, MusicTop },
+  methods: {
+    goDetails() {
+      this.$router.push("/musicRecDetails");
+    },
+  },
 };
 </script>

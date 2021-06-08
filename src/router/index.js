@@ -12,6 +12,7 @@ const mallRanking = r => require.ensure([], () => r(require('@/views/mall/Rankin
 const musicHall = r => require.ensure([], () => r(require('@/views/music/Hall')), 'musicHall');
 const musicRecommend = r => require.ensure([], () => r(require('@/views/music/Recommend')), 'musicRecommend');
 const musicLike = r => require.ensure([], () => r(require('@/views/music/Like')), 'musicLike');
+const musicRecDetails = r => require.ensure([], () => r(require('@/views/music/recDetails')), 'musicRecDetails');
 
 Vue.use(VueRouter)
 
@@ -56,6 +57,11 @@ const routes = [
     path: "/musicLike",
     name: "MusicLike",
     component: musicLike
+  }
+  , {
+    path: "/musicRecDetails",
+    name: "MusicRecDetails",
+    component: musicRecDetails
   }
 ]
 
